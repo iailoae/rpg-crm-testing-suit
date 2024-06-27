@@ -1,10 +1,14 @@
 const login = require("./login");
 const { test, expect, beforeAll } = require("@jest/globals");
 
+/**
+ * Load the env from .env
+ */
+require('dotenv').config()
 
 /**
- * Before all the test we log in the user and recive a JWT token.
- * We will going to use the token for authentication and authorization
+ * Before all the test we log in the user and receive a JWT token.
+ * We will be going to use the token for authentication and authorization
  */
 let token = null;
 
